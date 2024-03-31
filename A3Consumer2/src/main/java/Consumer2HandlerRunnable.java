@@ -57,13 +57,13 @@ public class Consumer2HandlerRunnable implements Runnable {
 
   }
 
-  private void updateDB(String msg, LiftRideDao dao) {
-    //[217, 10, 1, 2024, 1, 123]
-    //[time, liftID, resortID, seasonID, dayID, skierID]
-    String[] parts = msg.split(",");
-    int[] liftRideMsg = {Integer.parseInt(parts[0]), Integer.parseInt(parts[1]),
-        Integer.parseInt(parts[2]), Integer.parseInt(parts[3]), Integer.parseInt(parts[4]),
-        Integer.parseInt(parts[5])};
-    //dao.createLiftRide(liftRideMsg);
-  }
+//  private void updateDB(String msg, LiftRideDao dao) {
+//    //[217, 10, 1, 2024, 1, 123]
+//    //[time, liftID, resortID, seasonID, dayID, skierID]
+//    String[] parts = msg.split(",");
+//    int[] liftRideMsg = {Integer.parseInt(parts[0]), Integer.parseInt(parts[1]),
+//        Integer.parseInt(parts[2]), Integer.parseInt(parts[3]), Integer.parseInt(parts[4]),
+//        Integer.parseInt(parts[5])};
+//    //dao.createLiftRide(liftRideMsg);
+//  }
 }
